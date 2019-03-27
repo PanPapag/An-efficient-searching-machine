@@ -1,24 +1,24 @@
 all: myfind SplitterMerger Searcher
 
-myfind: Initializer.o	Handler.o
-		gcc Initializer.o Handler.o -o myfind
+myfind: src/Initializer.o	src/Handler.o
+		gcc src/Initializer.o src/Handler.o -o myfind
 
-SplitterMerger: SplitterMerger.o
-		gcc SplitterMerger.o -o SplitterMerger
+SplitterMerger: src/SplitterMerger.o
+		gcc src/SplitterMerger.o -o SplitterMerger
 
-Searcher: Searcher.o
-		gcc Searcher.o -o Searcher
+Searcher: src/Searcher.o
+		gcc src/Searcher.o -o Searcher
 
-Searcher.o: Searcher.c Utilities.h Searcher.h
+Searcher.o: src/Searcher.c headers/Utilities.h headers/Searcher.h
 
-SplitterMerger.o:	SplitterMerger.c Utilities.h SplitterMerger.h
+SplitterMerger.o:	src/SplitterMerger.c headers/Utilities.h headers/SplitterMerger.h
 
-Handler.o: Handler.c Handler.h
+Handler.o: src/Handler.c headers/Handler.h
 
-Initializer.o:	Initializer.c Utilities.h Initializer.h Handler.h
+Initializer.o:	src/Initializer.c headers/Utilities.h headers/Initializer.h headers/Handler.h
 
 
 clean:
-	rm -r myfind Initializer.o Handler.o
-	rm -r SplitterMerger SplitterMerger.o
-	rm -r Searcher Searcher.o
+	rm -r myfind src/Handler.o src/Initializer.o
+	rm -r SplitterMerger src/SplitterMerger.o
+	rm -r Searcher src/Searcher.o
