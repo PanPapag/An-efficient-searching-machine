@@ -11,8 +11,9 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
-#include "Utilities.h"
-#include "Searcher.h"
+
+#include "../headers/Utilities.h"
+#include "../headers/Searcher.h"
 
 int main(int argc,char *argv[])
 {

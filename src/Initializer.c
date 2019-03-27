@@ -13,9 +13,9 @@
 #include <sys/stat.h>
 #include <sys/time.h>
 
-#include "Utilities.h"
-#include "Initializer.h"
-#include "Handler.h"
+#include "../headers/Utilities.h"
+#include "../headers/Initializer.h"
+#include "../headers/Handler.h"
 
 /* global variable to count the number of SIGUSR2 sent */
 volatile sig_atomic_t signal_received = 0;
