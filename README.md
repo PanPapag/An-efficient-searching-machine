@@ -1,6 +1,6 @@
 # An-efficient-searching-machine
 
-As part of this work, you need to write a program that creates new child processes with the help of the fork () command. Child processes compose a process hierarchy that is in the form of a binary tree. This tree has internal nodes as well as leaf nodes.
+As part of this work, it was needed to write a program that creates new child processes with the help of the fork () command. Child processes compose a process hierarchy that is in the form of a binary tree. This tree has internal nodes as well as leaf nodes.
 
 The purpose of this project is to perform queries in a 'high-level binary record' and to sort the search results. Processes of the binary process tree implement the search for records in the file. Leaf nodes undertake to search for records in parts of the file while internal nodes compose the results they get from their children and promote them to their parents. The final sorting of the results is done by the sort () system program after the search process has finished.
 
@@ -8,7 +8,7 @@ The Hierarchy of Processes:
 The goal of this hierarchy is to help search for records that meet certain criteria from a (large) record. The file is in binary format. The entire binary tree is aimed at a common purpose for which splitters / mergers and searchers work collaboratively. Thus, the nodes perform different executable programs depending on the role they have: the executable splitter / merger and the searcher (s) implement the search, the root makes the orchestration of all the processes and sort sorts the final result. Generally, processes get parameters from their parents to do the job they are assigned to, and they also produce some result (s) and statistics that usually return them to their mother process.
 
 ## Compilation
-Type  ```make
+Inside project dictory simply type  ```make
         ```
         
 ## Running
