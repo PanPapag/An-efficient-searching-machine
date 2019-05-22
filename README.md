@@ -15,16 +15,16 @@ Inside project dictory simply type  ```make
  Type  ```./myfind –h Height –d Datafile -p Pattern -s
        ```
        
-  - myfind is the executable you will create
+  * myfind is the executable you will create
 
-  - Datafile is the binary data input file
+  * Datafile is the binary data input file
 
-  - Height is the depth of the full binary search tree to be created, with maximum
+  * Height is the depth of the full binary search tree to be created, with maximum
 a setpoint depth = 5. The minimum depth allowed is 1, which means a splitter-merger node and two searchers who search each one in half, depth = 2 means a splitter-merger node with two splitter- each one has two children searcher who can search in one quarter of each file each
 
-  - Pattern is the (sub-) string we look for in the (binary) data file (any field)
+  * Pattern is the (sub-) string we look for in the (binary) data file (any field)
 
-  - The display of the -s flag indicates that the searchers nodes are looking for parts of the file that is
+  * The display of the -s flag indicates that the searchers nodes are looking for parts of the file that is
 unevenly the skew of the records they are looking for
 
 ## Deletion of object files and executables
